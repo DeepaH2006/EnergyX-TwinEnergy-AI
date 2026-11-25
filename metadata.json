@@ -1,0 +1,6 @@
+{
+  "name": "AI Digital Twin - Renewable Energy Management",
+  "description": "AI-Powered Digital Twin for Intelligent Renewable Energy Management, Forecasting, What-If Simulation, and Multi-Objective Energy Optimization for KPIT Sparkle.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

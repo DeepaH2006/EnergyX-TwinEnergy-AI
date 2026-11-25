@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@layer utilities {
+  @keyframes flow-right {
+    0% {
+      stroke-dashoffset: 24;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  @keyframes flow-left {
+    0% {
+      stroke-dashoffset: 0;
+    }
+    100% {
+      stroke-dashoffset: 24;
+    }
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% {
+      opacity: 0.8;
+      filter: drop-shadow(0 0 6px currentColor);
+    }
+    50% {
+      opacity: 1;
+      filter: drop-shadow(0 0 12px currentColor);
+    }
+  }
+
+  .animate-flow-right {
+    stroke-dasharray: 6 6;
+    animation: flow-right 1.2s linear infinite;
+  }
+
+  .animate-flow-left {
+    stroke-dasharray: 6 6;
+    animation: flow-left 1.2s linear infinite;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+}

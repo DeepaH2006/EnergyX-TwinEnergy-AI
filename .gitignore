@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+backend/.venv/
+
+# Build files
+dist/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+backend/.env
+backend/.env.*
+!backend/.env.example
+
+# Python cache
+__pycache__/
+**/__pycache__/
+.pytest_cache/
+
+# Local files
+*.local
+backend/uploads/
+
+# IDE files
+.vscode/
